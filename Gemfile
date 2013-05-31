@@ -27,6 +27,8 @@ gem 'jquery-rails'
 # Use rspec instead of Test Unit
 group :test, :development do
   gem 'rspec-rails'
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

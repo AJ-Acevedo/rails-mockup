@@ -1,2 +1,38 @@
 @import "bootstrap/bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 60px; padding-bottom: 20px;}
+
+.navbar-form input[type="text"],
+.navbar-form input[type="password"] {
+	width: 180px;
+	}
+
+.body-content {
+	padding-left: 15px;
+    padding-right: 15px;
+	}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+	/* Let the jumbotron breathe */
+    .jumbotron {
+      margin-top: 20px;
+    }
+    
+	/* Remove padding from wrapping element since we kick in the grid classes here */
+    .body-content {
+      padding: 0;
+    }
+  }
+
+  .navbar-inverse{
+	  background-color:#C1272D;
+	  /* Gradients for various Browsers*/
+	  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C1272D), to(#7D280C));/* Safari 4+, Chrome 1-9 */
+	  background-image: -webkit-linear-gradient(top, #FF0000, #7D280C);/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+	  background-image: -moz-linear-gradient(top, #C1272D, #7D280C);/* Firefox 3.6+ */
+	  background-image: -ms-linear-gradient(top, #C1272D, #7D280C);/* IE 10+ */
+	  background-image: -o-linear-gradient(top, #C1272D, #7D280C);/* Opera 11.10+ */
+  }
+  li.active{
+	  background-color:#FFFFFF;
+  }
