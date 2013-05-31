@@ -15,3 +15,15 @@
 //= require turbolinks
 //= require bootstrap/bootstrap
 //= require_tree .
+!function ($) {
+  $(function(){
+    var $window = $(window)
+     // side bar
+    $('.codex-article-sidenav').affix({
+      offset: {
+        top: function () { return $window.width() <= 980 ? 290 : 210 }
+      , bottom: 250
+      }
+    })
+  })
+}(window.jQuery)
