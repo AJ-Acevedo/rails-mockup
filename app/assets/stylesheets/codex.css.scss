@@ -4,14 +4,19 @@
 body{
 	position:relative;
 }
-.codex-article-sidenav.affix {
-  position: static;
-}
-.affix{
-	top: 30px;
-	width: 20%;
-}
 
+@media (min-width: 768px){
+	.affix{
+		top: 30px;
+		width: 20%;
+		padding-right:10px;
+	}
+}
+@media (max-width: 768px){
+	.affix{
+		position:static;
+	}
+}
 .codex-article-header{
 	font-size: 22px;
 	text-align: center;
