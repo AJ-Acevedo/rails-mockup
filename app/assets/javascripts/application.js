@@ -19,10 +19,10 @@
   $(function(){
     var $window = $(window)
      // side bar
-    $('.codex-article-sidenav').affix({
+    $('.codex-article-sidebar').affix({
       offset: {
         top: function () { return $window.width() <= 980 ? 290 : 210 }
-      , bottom: 250
+      , bottom: 270
       }
     })
   })

@@ -1,9 +1,17 @@
 // Place all the styles related to the codex controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.codex-article-sidebar.affix {
-  position: fixed;
+body{
+	position:relative;
 }
+.codex-article-sidenav.affix {
+  position: static;
+}
+.affix{
+	top: 30px;
+	width: 20%;
+}
+
 .codex-article-header{
 	font-size: 22px;
 	text-align: center;
