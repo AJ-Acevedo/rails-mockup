@@ -33,6 +33,7 @@ body { padding-top: 60px; padding-bottom: 20px;}
 	  background-image: -ms-linear-gradient(top, #C1272D, #7D280C);/* IE 10+ */
 	  background-image: -o-linear-gradient(top, #C1272D, #7D280C);/* Opera 11.10+ */
   }
-  li.active{
-	  background-color:#FFFFFF;
-  }
+  
+  .navbar .nav .active > a, .navbar .nav .active > a:hover {
+      background-color: #4B4040;
+      }
