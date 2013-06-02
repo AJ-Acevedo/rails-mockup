@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require bootstrap/bootstrap
 //= require_tree .
+
+//Codex Sidebar Jquery Function
 !function ($) {
   $(function(){
     var $window = $(window)
@@ -27,3 +29,8 @@
     })
   })
 }(window.jQuery)
+
+//Nav Bar Dropdown Jquery
+$(document).ready(function () {
+          $('.dropdown-toggle').dropdown();
+    }); 
