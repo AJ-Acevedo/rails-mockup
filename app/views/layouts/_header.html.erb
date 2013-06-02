@@ -8,6 +8,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'fav.ico' %>
 </head>
 <body>
 <%= render 'layouts/navbar_header' unless @disable_navbar_header %>
