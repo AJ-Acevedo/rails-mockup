@@ -15,7 +15,3 @@
 //= require turbolinks
 //= require bootstrap/bootstrap
 //= require_tree .
-
-//Nav Bar Dropdown Jquery
-$(document).ready(function () {
-          $('.dropdown-toggle').dropdown();
