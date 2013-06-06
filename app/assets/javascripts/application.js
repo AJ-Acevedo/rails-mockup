@@ -16,21 +16,6 @@
 //= require bootstrap/bootstrap
 //= require_tree .
 
-//Codex Sidebar Jquery Function
-!function ($) {
-  $(function(){
-    var $window = $(window)
-     // side bar
-    $('.codex-article-sidebar').affix({
-      offset: {
-        top: function () { return $window.width() <= 980 ? 290 : 210 }
-      , bottom: 270
-      }
-    })
-  })
-}(window.jQuery)
-
 //Nav Bar Dropdown Jquery
 $(document).ready(function () {
           $('.dropdown-toggle').dropdown();
-    }); 

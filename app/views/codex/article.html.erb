@@ -56,12 +56,12 @@
 						</pre>
 					</p>
 				</div>
-				
+				<br /><br />
 				<div class="codex-article-section" id="secret">
 					<h1>Secret info</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam augue odio, vestibulum eu consequat non, elementum a libero. Proin venenatis purus eget ligula tincidunt aliquet. Cras in interdum tortor. Cras id mi id magna imperdiet hendrerit non quis justo. Duis faucibus vulputate velit at fermentum. Ut rutrum tempor leo et posuere. Donec ut mi at sem egestas condimentum vel vitae nunc. Ut pharetra porta gravida. Etiam consequat nisl nec mi imperdiet vehicula. Proin placerat, erat a volutpat accumsan, enim libero dictum lorem, hendrerit laoreet nisl ipsum in lacus. Pellentesque in neque nec purus venenatis consectetur. Pellentesque nec justo purus, a dapibus sem.</p>
 				</div>
-				
+				<br />
 				<div class="codex-article-section" id="doublesecret">
 					<h1>Double Secret info</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam augue odio, vestibulum eu consequat non, elementum a libero. Proin venenatis purus eget ligula tincidunt aliquet. Cras in interdum tortor. Cras id mi id magna imperdiet hendrerit non quis justo. Duis faucibus vulputate velit at fermentum. Ut rutrum tempor leo et posuere. Donec ut mi at sem egestas condimentum vel vitae nunc. Ut pharetra porta gravida. Etiam consequat nisl nec mi imperdiet vehicula. Proin placerat, erat a volutpat accumsan, enim libero dictum lorem, hendrerit laoreet nisl ipsum in lacus. Pellentesque in neque nec purus venenatis consectetur. Pellentesque nec justo purus, a dapibus sem.</p>
@@ -71,3 +71,19 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	//Codex Sidebar Jquery Function
+	!function ($) {
+	  $(function(){
+	    var $window = $(window)
+	     // side bar
+	    $('.codex-article-sidebar').affix({
+	      offset: {
+	        top: function () { return $window.width() <= 980 ? 290 : 210 }
+	      , bottom: 270
+	      }
+	    })
+	  })
+	}(window.jQuery)
+ 
+	</script
