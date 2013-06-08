@@ -1,4 +1,5 @@
 @import "../bootstrap/bootstrap";
+
 //Variable Overrides
 $navbar-inverse-bg: #F24444;
 $dropdown-link-hover-bg: #F24444;
@@ -25,13 +26,12 @@ body {
 	@include gradient-vertical($light, $dark);
 }
 
-.navbar .active > a, .active > a:hover, .active > a:focus {
-  @include gradient-vertical($dark, $light);
+.navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+	@include gradient-vertical($dark, $light);
 }
 
-.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
-  @include gradient-vertical($dark, $light);
+.navbar .nav .active > a, .navbar .nav .active > a:hover{
+@include gradient-vertical($dark, $light);	
 }
-  	
 
 @import "../bootstrap/bootstrap";
