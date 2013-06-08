@@ -25,6 +25,7 @@ body { padding-top: 60px; padding-bottom: 20px;}
   }
 
 $navbar-inverse-bg: #F24444;
+$dropdown-link-hover-bg: #F24444;
 $light: #F24444;
 $dark: #8A2121;
 .navbar-inverse {
@@ -55,6 +56,5 @@ $dark: #8A2121;
 	background-image: -ms-linear-gradient(top, $dark, $light);/* IE 10+ */
 	background-image: -o-linear-gradient(top, $dark, $light);/* Opera 11.10+ */
 }
-
 	  
 @import "../bootstrap/bootstrap";
