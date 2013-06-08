@@ -1,60 +1,37 @@
 @import "../bootstrap/bootstrap";
-body { padding-top: 60px; padding-bottom: 20px;}
-
-.navbar-form input[type="text"],
-.navbar-form input[type="password"] {
-	width: 180px;
-	}
-
-.body-content {
-	padding-left: 15px;
-    padding-right: 15px;
-	}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-	/* Let the jumbotron breathe */
-    .jumbotron {
-      margin-top: 20px;
-    }
-    
-	/* Remove padding from wrapping element since we kick in the grid classes here */
-    .body-content {
-      padding: 0;
-    }
-  }
-
+//Variable Overrides
 $navbar-inverse-bg: #F24444;
 $dropdown-link-hover-bg: #F24444;
 $light: #F24444;
 $dark: #8A2121;
-.navbar-inverse {
-	background-color:$light;
-	/* Gradients for various Browsers*/
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($light), to($dark));/* Safari 4+, Chrome 1-9 */
-	background-image: -webkit-linear-gradient(top, $light, $dark);/* Safari 5.1+, Mobile Safari, Chrome 10+ */
-	background-image: -moz-linear-gradient(top, $light, $dark);/* Firefox 3.6+ */
-	background-image: -ms-linear-gradient(top, $light, $dark);/* IE 10+ */
-	background-image: -o-linear-gradient(top, $light, $dark);/* Opera 11.10+ */
+$navbar-bg: $dark;
+$navbar-link-color: #FFFFFF;
+$navbar-link-hover-color: #777777;
+$navbar-link-active-bg: #8A2121;
+$navbar-link-active-color: #B8B8B8;
+
+//Style Overrides
+.body-content { 
+	padding-left: 15px;
+    padding-right: 15px;
+	}
+
+body { 
+	padding-top: 60px; 
+	padding-bottom: 20px;
 }
 
-.navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-	background-color: $navbar-inverse-bg;
-	/* Gradients for various Browsers*/
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($dark), to($light));/* Safari 4+, Chrome 1-9 */
-	background-image: -webkit-linear-gradient(top, $dark, $light);/* Safari 5.1+, Mobile Safari, Chrome 10+ */
-	background-image: -moz-linear-gradient(top, $dark, $light);/* Firefox 3.6+ */
-	background-image: -ms-linear-gradient(top, $dark, $light);/* IE 10+ */
-	background-image: -o-linear-gradient(top, $dark, $light);/* Opera 11.10+ */
+.navbar{
+	@include gradient-vertical($light, $dark);
 }
-.navbar .nav .active > a, .navbar .nav .active > a:hover{
-	background-color: $navbar-inverse-bg;
-	/* Gradients for various Browsers*/
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($dark), to($light));/* Safari 4+, Chrome 1-9 */
-	background-image: -webkit-linear-gradient(top, $dark, $light);/* Safari 5.1+, Mobile Safari, Chrome 10+ */
-	background-image: -moz-linear-gradient(top, $dark, $light);/* Firefox 3.6+ */
-	background-image: -ms-linear-gradient(top, $dark, $light);/* IE 10+ */
-	background-image: -o-linear-gradient(top, $dark, $light);/* Opera 11.10+ */
+
+.navbar .active > a, .active > a:hover, .active > a:focus {
+  @include gradient-vertical($dark, $light);
 }
-	  
+
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+  @include gradient-vertical($dark, $light);
+}
+  	
+
 @import "../bootstrap/bootstrap";
