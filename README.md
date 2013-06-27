@@ -1,4 +1,4 @@
-## Ruby on Rails 4rc1 and Bootstrap 3.0 Mockup
+## Ruby on Rails 4.0.0 and Bootstrap 3.0 Mockup
 
 
 This is a simple Ruby on Rails app to mockup a site using bootstrap 3.0-wip.  
